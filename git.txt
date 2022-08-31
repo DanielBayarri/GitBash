@@ -1,0 +1,21 @@
+- - - - Generales - - - - -
+git -- version
+git config --global user.name "name"
+git config --global user.email name@gmail.com
+
+git status
+
+- - - Iniciar Repositorio - - - 
+
+git init -> Iniciar GIt en el directorio actual
+
+git add <archivo> -> Añadir archivo para el commit (git add . añade todos archivos)
+
+git commit -m "Texto que identifique por que se hizo el commit"
+
+git push origin master -> Subir Repositorio
+
+- - Git Clone - - Descargar repositorio
+git clone http://link-repositorio.com
+
+

@@ -1,0 +1,44 @@
+- - - - Change Directory- - - -
+pwd -> Directorio actual
+cd ~ -> Directorio usuario
+cd - -> ubicacion anterior
+cd .. ; ls -> Concatenar comandos 
+cd .. && ls -> Concatena, pero si el primero no se ejecuta, los demas tampoco
+
+- - - - - Listar - - - - -
+ls -> list
+ls -h -> Formato mas entendible
+ls -a -> Muestra archivos ocultos
+ls -l -> listar formato largo
+ls -S -> Por tamaño
+ls -t -> Por fecha
+
+- - - - - - - Modificar Archivos - - - - - 
+touch archivo2.txt -> Crear archivo
+mkdir carpeta -> Crear directorio
+cp /home/carta.txt /var/ -> Copiar archivo en carpeta var
+cp carta.txt carta_copia.txt -> copia en mismo directorio
+rm carta.txt -> Borrar archivo
+mv  -> Renombrar o mover archivo
+
+- - - Mostar Contenido - - - 
+head -n 3 archivo.txt-> Muesta n lineas de un archivo
+tail archivo.txt -> las ultimas lineas de un archivos
+less archivo.txt -> Abre el archivo( salir q)
+
+- - - - Grep - - - - -
+grep alumno /etc/passwd -> busca el usuario alumno dentro del fichero passwd
+grep -v deb-src /etc/apt/sources.list -> selecciona del fichero sources.list las lineas que NO tienen el texto deb-src
+
+- - - - Find - - - - -
+name / –iname : buscamos en función del nombre 
+–type : según el tipo (f = fichero, d = directorio y l = enlace)
+–size : según el tamaño
+–perm: según los permisos
+–user: según el usuario al que pertenezca el elemento.
+–exec: aplica cualquier comando al fichero encontrado
+
+find /etc -name ‘*.conf’ -> todos los ficheros con extensión conf
+find / -size +10M -size -20M -> cuyo tamaño esté entre 10MB y 20MB
+find / -name core -exec rm ‘{}’ ‘;’ -> los ficheros que se nombren core y los borra.
+
