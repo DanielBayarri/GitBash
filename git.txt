@@ -19,7 +19,15 @@ git add <archivo> -> Añadir archivo para el commit (git add . añade todos arch
 
 git commit -m "Texto que identifique por que se hizo el commit"
 
-git push origin master -> Subir Repositorio
+git push
+
+
+
+** Si no existe**
+
+git remote add origin https://github.com/DanielBayarri/GitBash.git
+
+git push -u origin master -> Subir Repositorio
 
 
 - - - - - - - - 
