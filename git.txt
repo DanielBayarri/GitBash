@@ -4,6 +4,12 @@ git config --global user.name "name"
 git config --global user.email name@gmail.com
 
 git status
+git status -s
+
+
+- - Git Clone - - Descargar repositorio
+git clone http://link-repositorio.com
+
 
 - - - Iniciar Repositorio - - - 
 
@@ -15,7 +21,14 @@ git commit -m "Texto que identifique por que se hizo el commit"
 
 git push origin master -> Subir Repositorio
 
-- - Git Clone - - Descargar repositorio
-git clone http://link-repositorio.com
 
+- - - - - - - - 
 
+git rm  <archivo> -> Borrar + commit
+
+git restore <archivo> -> recuperar desde el stage(antes commit)
+
+git diff -> Visualizar cambios
+git diff --stage
+
+git log --oneline -> Ver historial commits
